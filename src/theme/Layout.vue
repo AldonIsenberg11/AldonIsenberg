@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <app-header></app-header>
+    <img src="/../assets/coverPic.png" alt="Pic of Aldon" />
     <section class="main-section section">
       <div class="container content">
         <router-view></router-view>
