@@ -9,7 +9,7 @@ import NotFound from './theme/NotFound.vue'
 // const NotFound = () => System.import('./theme/NotFound.vue')
 
 // ^This will provide lazy loading for the import Category, Login, NotFound
-// ^so it's only loaded when needed
+// ^so it's only loaded when needed on the client's browser, useful when this list increases in size
 
 Vue.use(VueRouter)
 
