@@ -1,0 +1,37 @@
+{
+  "officials": ["referee1","referee2","referee3"],
+  "wrestlerGreen": "",
+  "wrestlerRed": "",
+  "matchEvent": [{
+      "type": "clock, score, penalty",
+      "score": "Takedown, Reversal, Escape",
+      "wrestler": "redID, greenID",
+      "clockArgument": "matchStart, matchEnd, periodStart, periodEnd, refereeStop, refereeStart",
+      "clockTime": matchTimestamp,
+      "timestamp": utcTimestamp,
+      "penalty": "lockedHands, caution"
+    },{
+      "type": "score",
+      "score": "Takedown",
+      "wrestler": "greenID",
+      "clockTime": timestamp,
+      "timestamp": utcTimestamp
+    },{
+      "type": "clock",
+      "clockArgument": "refereeStop",
+      "clockTime": timestamp,
+      "timestamp": utcTimestamp
+    },{
+      "type": "clock",
+      "clockArgument": "refereeStart",
+      "timestamp": utcTimestamp
+    },{
+      "type": "penalty",
+      "wrestler": "greenID",
+      "clockArgument": "refereeStop",
+      "clockTime": timestamp,
+      "timestamp": utcTimestamp,
+      "penalty": "lockedHands"
+    }
+  ]
+}
