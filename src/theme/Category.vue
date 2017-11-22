@@ -12,7 +12,6 @@
 </template>
 <script>
 import Post from './Post.vue'
-import appService from '../app.service.js'
 export default {
   components: {
     'app-post': Post
@@ -29,18 +28,17 @@ export default {
         { id: 4, title: 'State of The Mobile Gap Between Native and Web', content: 'Clearly PhoneGap, and Cordova are still required today in the mobile world, but when is it really needed? Did the web ever catch up?', link: 'https://remysharp.com/2016/05/28/state-of-the-gap' },
         { id: 5, title: 'Learning JavaScript Design Patterns', content: 'Design patterns are reusable solutions to commonly occurring problems in software design.', link: 'https://addyosmani.com/resources/essentialjsdesignpatterns/book/' },
         { id: 6, title: 'The Power of Custom Directives in Vue', content: 'The beautiful thing about Vue is that it\'s incredibly feature-rich.', link: 'https://css-tricks.com/power-custom-directives-vue/' }
-      ]
+      ],
+      posts: []
     }
   },
   methods: {
     loadPosts () {
-      let categoryId = 2
-      if (this.id === 'mobile') {
-        categoryId = 11
+      if (this.id === 'front-end') {
+        this.posts = this.postsFrontEnd
+      } else {
+        this.posts = this.postsMobile
       }
-      appService.getPosts(categoryId).then(data => {
-        this.posts = data
-      })
     }
   },
   watch: {
