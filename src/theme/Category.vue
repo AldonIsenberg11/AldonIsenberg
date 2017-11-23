@@ -19,8 +19,8 @@ export default {
   data () {
     return {
       id: this.$route.params.id,
-      postsFrontEnd: [
-        { id: 1, title: 'PWA Stats', content: 'A community-driven list of stats and news related to Progressive Web Apps', link: 'https://www.pwastats.com/' },
+      postsAboutMe: [
+        { id: 1, title: 'About Me', content: 'I\'m a firm believer that competition is the driving factor of innovation.', link: 'https://www.Freightview.com' },
         { id: 2, title: 'A Comprehensive Guide To HTTP/2 Server Push', content: 'No longer is HTTP/2 a feature we pine for. It has arrived, and with it comes server push!', link: 'https://www.smashingmagazine.com/2017/04/guide-http2-server-push/' },
         { id: 3, title: 'So what’s this GraphQL thing I keep hearing about?', content: 'Why now is the perfect time to learn what exactly this GraphQL thing you keep hearing about really is.', link: 'https://medium.freecodecamp.com/so-whats-this-graphql-thing-i-keep-hearing-about-baf4d36c20cf' }
       ],
@@ -35,7 +35,7 @@ export default {
   methods: {
     loadPosts () {
       if (this.id === 'about-me') {
-        this.posts = this.postsFrontEnd
+        this.posts = this.postsAboutMe
       } else {
         this.posts = this.postsEducation
       }
