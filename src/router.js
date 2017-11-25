@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Home from './theme/Home.vue'
 import Category from './theme/Category.vue'
 import Login from './theme/Login.vue'
 import NotFound from './theme/NotFound.vue'
@@ -20,7 +21,7 @@ const router = new VueRouter({
   routes: [
     { path: '/login', component: Login },
     { path: '/category/:id', name: 'category', component: Category },
-    { path: '/', redirect: '/category/about-me' },
+    { path: '/', component: Home },
     { path: '*', component: NotFound }
   ]
 })
