@@ -1,9 +1,14 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from './theme/Home.vue'
-import Category from './theme/Category.vue'
-import Login from './theme/Login.vue'
-import NotFound from './theme/NotFound.vue'
+import Home from './layout/pages/Home.vue'
+import AboutMe from './layout/pages/AboutMe.vue'
+import Education from './layout/pages/Education.vue'
+import WorkExperience from './layout/pages/WorkExperience.vue'
+import Wrestling from './layout/pages/Wrestling.vue'
+import Hobbies from './layout/pages/Hobbies.vue'
+import Blog from './layout/pages/Blog.vue'
+import Login from './layout/pages/Login.vue'
+import NotFound from './layout/pages/NotFound.vue'
 
 // const Category = () => System.import('./theme/Category.vue')
 // const Login = () => System.import('./theme/Login.vue')
@@ -19,9 +24,15 @@ const router = new VueRouter({
   linkActiveClass: 'is-active',
   scrollBehavior: (to, from, savedPosition) => ({y: 0}),
   routes: [
-    { path: '/login', component: Login },
-    { path: '/category/:id', name: 'category', component: Category },
     { path: '/', component: Home },
+    { path: '/aboutMe', component: AboutMe },
+    { path: '/education', component: Education },
+    { path: '/workExperience', component: WorkExperience },
+    { path: '/wrestling', component: Wrestling },
+    { path: '/hobbies', component: Hobbies },
+    { path: '/blog/', component: Blog },
+    { path: '/blog/:id', name: 'blog', component: Blog },
+    { path: '/login', component: Login },
     { path: '*', component: NotFound }
   ]
 })
