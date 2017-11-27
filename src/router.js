@@ -7,7 +7,6 @@ import WorkExperience from './layout/pages/WorkExperience.vue'
 import Wrestling from './layout/pages/Wrestling.vue'
 import Hobbies from './layout/pages/Hobbies.vue'
 import Blog from './layout/pages/Blog.vue'
-import Login from './layout/pages/Login.vue'
 import NotFound from './layout/pages/NotFound.vue'
 
 // const Category = () => System.import('./theme/Category.vue')
@@ -25,14 +24,13 @@ const router = new VueRouter({
   scrollBehavior: (to, from, savedPosition) => ({y: 0}),
   routes: [
     { path: '/', component: Home },
-    { path: '/aboutMe', component: AboutMe },
+    { path: '/about-me', component: AboutMe },
     { path: '/education', component: Education },
-    { path: '/workExperience', component: WorkExperience },
+    { path: '/work-experience', component: WorkExperience },
     { path: '/wrestling', component: Wrestling },
     { path: '/hobbies', component: Hobbies },
     { path: '/blog/', component: Blog },
     { path: '/blog/:id', name: 'blog', component: Blog },
-    { path: '/login', component: Login },
     { path: '*', component: NotFound }
   ]
 })
