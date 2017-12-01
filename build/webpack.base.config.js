@@ -25,7 +25,7 @@ const config = {
         loader: 'file-loader',
         exclude: /node_modules/,
         options: {
-          name: '[path][name].[ext]'
+          name: '[hash].[ext]'
         }
       },
       {
