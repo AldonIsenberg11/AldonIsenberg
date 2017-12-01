@@ -21,6 +21,14 @@ const config = {
         }
       },
       {
+        test: /\.png$/,
+        loader: 'file-loader',
+        exclude: /node_modules/,
+        options: {
+          name: '[path][name].[ext]'
+        }
+      },
+      {
         test: /\.js$/,
         loader: 'babel-loader',
         exclude: /node_modules/
