@@ -11,10 +11,10 @@
     <div id="navbarBasicExample" class="navbar-menu is-active dark-background">
       <div class="navbar-start">
         <nuxt-link to="/AboutMe" class="navbar-item hover-style">About Me</nuxt-link>
-        <nuxt-link to="/Projects" class="navbar-item hover-style">Projects</nuxt-link>
         <nuxt-link to="/Resume" class="navbar-item hover-style">Resume</nuxt-link>
-        <nuxt-link to="/Blog" class="navbar-item hover-style">Blog</nuxt-link>
+        <nuxt-link to="/Projects" class="navbar-item hover-style">Projects</nuxt-link>
         <nuxt-link to="/Hobbies" class="navbar-item hover-style">Hobbies</nuxt-link>
+        <nuxt-link to="/Blog" class="navbar-item hover-style">Blog</nuxt-link>
       </div>
     </div>
   </nav>
