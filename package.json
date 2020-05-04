@@ -2,6 +2,9 @@
   "name": "AldonIsenberg",
   "version": "1.0.0",
   "description": "Aldon's first website",
+  "engines": {
+    "node": "~10.15"
+  },
   "scripts": {
     "dev": "nuxt",
     "start": "nuxt start",

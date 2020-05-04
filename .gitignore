@@ -13,7 +13,6 @@ results
 *._t_
 *.pem
 
-node_modules
 npm-debug.log
 .DS_Store
 *_mapsrc
