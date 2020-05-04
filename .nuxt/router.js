@@ -4,8 +4,10 @@ import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
 const _5a8e03c4 = () => interopDefault(import('../pages/AboutMe/index.vue' /* webpackChunkName: "pages/AboutMe/index" */))
+const _8ee05c82 = () => interopDefault(import('../pages/Blog/index.vue' /* webpackChunkName: "pages/Blog/index" */))
 const _74980f6e = () => interopDefault(import('../pages/Hobbies/index.vue' /* webpackChunkName: "pages/Hobbies/index" */))
 const _0bfe08d2 = () => interopDefault(import('../pages/Projects/index.vue' /* webpackChunkName: "pages/Projects/index" */))
+const _3e1d200a = () => interopDefault(import('../pages/Resume/index.vue' /* webpackChunkName: "pages/Resume/index" */))
 const _3d768870 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 // TODO: remove in Nuxt 3
@@ -29,6 +31,10 @@ export const routerOptions = {
     component: _5a8e03c4,
     name: "AboutMe"
   }, {
+    path: "/Blog",
+    component: _8ee05c82,
+    name: "Blog"
+  }, {
     path: "/Hobbies",
     component: _74980f6e,
     name: "Hobbies"
@@ -36,6 +42,10 @@ export const routerOptions = {
     path: "/Projects",
     component: _0bfe08d2,
     name: "Projects"
+  }, {
+    path: "/Resume",
+    component: _3e1d200a,
+    name: "Resume"
   }, {
     path: "/",
     component: _3d768870,

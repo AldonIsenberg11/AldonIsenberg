@@ -10,6 +10,10 @@
   /* font-family: century-gothic; */
 }
 
+html {
+  background-color: rgb(26, 28, 29);
+}
+
 body {
   background-color: rgb(26, 28, 29);
 

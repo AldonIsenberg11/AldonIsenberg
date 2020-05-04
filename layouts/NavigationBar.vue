@@ -1,63 +1,20 @@
 <template>
   <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="navbar-item">
-        <img class="logo-image" src="@/assets/AI-logo.png" width="50" height="28">
+    <div class="navbar-brand dark-background">
+      <nuxt-link to="/" class="navbar-item">
+        <img class="logo-image" src="@/assets/AI-logo.png" width="45" height="28">
         <span class="primary">ALDON&nbsp;</span>
         <span class="secondary">ISENBERG</span>
-      </a>
-
-      <!-- <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a> -->
+      </nuxt-link>
     </div>
 
-    <div id="navbarBasicExample" class="navbar-menu is-active">
+    <div id="navbarBasicExample" class="navbar-menu is-active dark-background">
       <div class="navbar-start">
-        <a class="navbar-item">
-          <nuxt-link to="/AboutMe" class="link">About Me</nuxt-link>
-        </a>
-
-        <a class="navbar-item">
-          Documentation
-        </a>
-
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">
-            More
-          </a>
-
-          <div class="navbar-dropdown">
-            <a class="navbar-item">
-              About
-            </a>
-            <a class="navbar-item">
-              Jobs
-            </a>
-            <a class="navbar-item">
-              Contact
-            </a>
-            <hr class="navbar-divider">
-            <a class="navbar-item">
-              Report an issue
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="buttons">
-            <a class="button is-primary">
-              <strong>Sign up</strong>
-            </a>
-            <a class="button is-light">
-              Log in
-            </a>
-          </div>
-        </div>
+        <nuxt-link to="/AboutMe" class="navbar-item hover-style">About Me</nuxt-link>
+        <nuxt-link to="/Projects" class="navbar-item hover-style">Projects</nuxt-link>
+        <nuxt-link to="/Resume" class="navbar-item hover-style">Resume</nuxt-link>
+        <nuxt-link to="/Blog" class="navbar-item hover-style">Blog</nuxt-link>
+        <nuxt-link to="/Hobbies" class="navbar-item hover-style">Hobbies</nuxt-link>
       </div>
     </div>
   </nav>
@@ -70,18 +27,29 @@ export default {
 </script>
 
 <style scoped>
-.navbar {
+.hover-style {
   color: rgb(177, 199, 216);
   background-color: rgb(26, 28, 29);
 }
-.link {
+.hover-style:hover {
   background-color: rgb(26, 28, 29);
   color: rgb(177, 199, 216);
+  border-bottom: 5px solid;
+  border-bottom-color: rgb(86, 255, 208);
 }
-.pipe {
-  color: rgb(86, 255, 208);
-  /* letter-spacing: -0.3em; */
-  font-size: 1.4em;
+.hover-style:focus {
+  background-color: rgb(86, 255, 208);
+  border-top: 5px solid;
+  border-top-color: rgb(26, 28, 29);
+  border-bottom: 5px solid;
+  border-bottom-left-radius: 12px;
+  color: #4a4a4a
+}
+.dark-background {
+  background-color: rgb(26, 28, 29);
+}
+.dark-text {
+  color: #4a4a4a
 }
 </style>
 
