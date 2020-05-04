@@ -3,7 +3,7 @@ export default {
     postcss: {
       preset: {
         features: {
-          // customProperties: false
+          customProperties: false
         }
       }
     }
