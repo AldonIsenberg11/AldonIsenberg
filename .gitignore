@@ -13,6 +13,7 @@ results
 *._t_
 *.pem
 
+.nuxt
 node_modules
 npm-debug.log
 .DS_Store
