@@ -20,12 +20,6 @@
   </nav>
 </template>
 
-<script>
-export default {
-
-}
-</script>
-
 <style scoped>
 .hover-style {
   color: rgb(177, 199, 216);
