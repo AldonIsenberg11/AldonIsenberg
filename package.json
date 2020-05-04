@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "nuxt",
-    "start": "nuxt build && nuxt start",
+    "start": "nuxt start",
     "build": "nuxt build"
   },
   "keywords": [],
