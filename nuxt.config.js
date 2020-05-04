@@ -1,12 +1,22 @@
 export default {
-  buildModules: [
-    // Simple usage
-    '@nuxtjs/vuetify'
+  build: {
+    postcss: {
+      preset: {
+        features: {
+          // customProperties: false
+        }
+      }
+    }
+  },
+  // buildModules: [
+  //   // Simple usage
+  //   // '@nuxtjs/vuetify'
 
-    // With options
-    // ['@nuxtjs/vuetify', { /* module options */ }]
-  ],
+  //   // With options
+  //   // ['@nuxtjs/vuetify', { /* module options */ }]
+  // ],
   css: [
+    'bulma',
     '@/assets/main.css'
   ],
   // dev: "",
@@ -14,7 +24,9 @@ export default {
   // generate: "",
   // head: "",
   // loading: "",
-  // modules: "",
+  modules: [
+    '@nuxtjs/bulma'
+  ],
   // modulesDir: "",
   // plugins: "",
   // rootDir: "",

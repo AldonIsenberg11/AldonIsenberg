@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@nuxtjs/vuetify": "^1.11.2",
+    "@nuxtjs/bulma": "^1.2.7",
     "nuxt": "^2.12.2"
   },
   "devDependencies": {

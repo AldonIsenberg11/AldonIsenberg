@@ -12,8 +12,6 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_2901f82e from 'nuxt_plugin_plugin_2901f82e' // Source: ./vuetify/plugin.js (mode: 'all')
-
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
 
@@ -59,7 +57,7 @@ async function createApp (ssrContext) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"meta":[],"link":[{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Roboto:100,300,400,500,700,900&display=swap"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002F@mdi\u002Ffont@latest\u002Fcss\u002Fmaterialdesignicons.min.css"}],"style":[],"script":[]},
+    head: {"meta":[],"link":[],"style":[],"script":[]},
 
     store,
     router,
@@ -132,39 +130,6 @@ async function createApp (ssrContext) {
     ssrContext
   })
 
-  const inject = function (key, value) {
-    if (!key) {
-      throw new Error('inject(key, value) has no key provided')
-    }
-    if (value === undefined) {
-      throw new Error(`inject('${key}', value) has no value provided`)
-    }
-
-    key = '$' + key
-    // Add into app
-    app[key] = value
-
-    // Add into store
-    store[key] = app[key]
-
-    // Check if plugin not already installed
-    const installKey = '__nuxt_' + key + '_installed__'
-    if (Vue[installKey]) {
-      return
-    }
-    Vue[installKey] = true
-    // Call Vue.use() to install the plugin into vm
-    Vue.use(() => {
-      if (!Object.prototype.hasOwnProperty.call(Vue, key)) {
-        Object.defineProperty(Vue.prototype, key, {
-          get () {
-            return this.$root.$options[key]
-          }
-        })
-      }
-    })
-  }
-
   if (process.client) {
     // Replace store state before plugins execution
     if (window.__NUXT__ && window.__NUXT__.state) {
@@ -173,10 +138,6 @@ async function createApp (ssrContext) {
   }
 
   // Plugin execution
-
-  if (typeof nuxt_plugin_plugin_2901f82e === 'function') {
-    await nuxt_plugin_plugin_2901f82e(app.context, inject)
-  }
 
   // If server-side, wait for async component to be resolved first
   if (process.server && ssrContext && ssrContext.url) {
