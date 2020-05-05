@@ -1,19 +1,33 @@
 <template>
-  <div>
-    <section class="hero is-primary is-hidden-mobile">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">
-            Primary title
-          </h1>
-          <h2 class="subtitle">
-            Primary subtitle
-          </h2>
-        </div>
-      </div>
-    </section>
+  <div class="dark-background">
+    <nuxt-link v-if="isAboutMe" to="/AboutMe" class="navbar-item selected-link">About Me</nuxt-link>
+    <nuxt-link v-else to="/AboutMe" class="navbar-item hover-style">About Me</nuxt-link>
+
+    <nuxt-link v-if="isResume" to="/Resume" class="navbar-item selected-link">Resume</nuxt-link>
+    <nuxt-link v-else to="/Resume" class="navbar-item hover-style">Resume</nuxt-link>
+
+    <nuxt-link v-if="isProjects" to="/Projects" class="navbar-item selected-link">Projects</nuxt-link>
+    <nuxt-link v-else to="/Projects" class="navbar-item hover-style">Projects</nuxt-link>
+
+    <nuxt-link v-if="isHobbies" to="/Hobbies" class="navbar-item selected-link">Hobbies</nuxt-link>
+    <nuxt-link v-else to="/Hobbies" class="navbar-item hover-style">Hobbies</nuxt-link>
+
+    <nuxt-link v-if="isBlog" to="/Blog" class="navbar-item selected-link">Blog</nuxt-link>
+    <nuxt-link v-else to="/Blog" class="navbar-item hover-style">Blog</nuxt-link>
   </div>
 </template>
+
+<script>
+export default {
+  computed: {
+    isAboutMe() {return this.$route.name == 'AboutMe'},
+    isResume() {return this.$route.name == 'Resume'},
+    isProjects() {return this.$route.name == 'Projects'},
+    isHobbies() {return this.$route.name == 'Hobbies'},
+    isBlog() {return this.$route.name == 'Blog'}
+  }
+}
+</script>
 
 <style scoped>
 .hover-style {
@@ -71,3 +85,4 @@
   background-color: rgb(26, 28, 29);
 }
 </style>
+
