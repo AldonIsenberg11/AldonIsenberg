@@ -45,12 +45,13 @@ export default {
   letter-spacing: 0.1em;
 }
 .hover-style:focus {
-  background-color: rgb(86, 255, 208);
+  color: rgb(177, 199, 216);
+  background-color: rgb(26, 28, 29);
   border-top: 5px solid;
   border-top-color: rgb(26, 28, 29);
   border-bottom: 5px solid;
+  border-bottom-color: rgb(86, 255, 208);
   border-bottom-left-radius: 12px;
-  color: #4a4a4a;
   font-size: 1.4em;
 }
 .selected-link {
