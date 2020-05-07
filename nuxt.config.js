@@ -17,7 +17,7 @@ export default {
   // ],
   css: [
     'bulma',
-    '@/assets/main.css'
+    '@/assets/css/main.css'
   ],
   // dev: "",
   // env: "",
