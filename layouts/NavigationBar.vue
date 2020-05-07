@@ -1,11 +1,14 @@
 <template>
-  <nav class="navbar is-fixed-top dark-background " role="navigation" aria-label="main navigation">
-    <div class="navbar-brand dark-background ">
+  <nav class="navbar is-fixed-top dark-background" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand dark-background">
       <nuxt-link to="/" class="navbar-item">
         <span>&nbsp;</span>
         <img class="logo-image" src="@/assets/AI-logo.png" width="44">
-        <span class="primary">&nbsp;ALDON&nbsp;</span>
-        <span class="secondary">ISENBERG</span>
+        <!-- <span v-if="isLandingPage" class="tertiary">&nbsp;ALDON&nbsp;</span>
+        <span v-else class="primary">&nbsp;ALDON&nbsp;</span> -->
+        &nbsp;
+        <span class="primary green-underline-text">Aldon&nbsp;</span>
+        <span class="secondary green-underline-text">Isenberg&nbsp;</span>
       </nuxt-link>
     </div>
 
@@ -25,9 +28,6 @@
         <nuxt-link v-if="isProjects" to="/Projects" class="navbar-item selected-link">Projects</nuxt-link>
         <nuxt-link v-else to="/Projects" class="navbar-item hover-style">Projects</nuxt-link>
 
-        <nuxt-link v-if="isHobbies" to="/Hobbies" class="navbar-item selected-link">Hobbies</nuxt-link>
-        <nuxt-link v-else to="/Hobbies" class="navbar-item hover-style">Hobbies</nuxt-link>
-
         <nuxt-link v-if="isBlog" to="/Blog" class="navbar-item selected-link">Blog</nuxt-link>
         <nuxt-link v-else to="/Blog" class="navbar-item hover-style">Blog</nuxt-link>
         <div class="container">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
@@ -42,8 +42,8 @@ export default {
     isAboutMe() {return this.$route.name == 'AboutMe'},
     isResume() {return this.$route.name == 'Resume'},
     isProjects() {return this.$route.name == 'Projects'},
-    isHobbies() {return this.$route.name == 'Hobbies'},
-    isBlog() {return this.$route.name == 'Blog'}
+    isBlog() {return this.$route.name == 'Blog'},
+    isLandingPage() {return this.$route.name == 'index'}
   }
 }
 </script>
@@ -57,6 +57,11 @@ export default {
 }
 .secondary {
   color: rgb(86, 255, 208);
+  letter-spacing: 0.05em;
+  font-size: 2.0em;
+}
+.tertiary {
+  color: rgb(241, 72, 106);
   letter-spacing: 0.05em;
   font-size: 2.0em;
 }
@@ -115,6 +120,21 @@ export default {
 .dark-background {
   background-color: rgb(26, 28, 29);
 }
-
+.green-underline {
+  /* background-color: rgb(86, 255, 208); */
+  border-bottom: 4px solid;
+  border-bottom-color: rgb(86, 255, 208);
+  /* border-top-color: rgb(241, 72, 106); */
+  /* border-top-color: rgb(242, 85, 103); */
+}
+.green-underline-text {
+  text-decoration-line: underline;
+  text-decoration-color: rgb(86, 255, 208);
+}
+.rose-underline {
+  /* background-color: rgb(86, 255, 208); */
+  border-bottom: 1px solid;
+  border-bottom-color:rgb(241, 72, 106);
+  /* border-top-color: rgb(241, 72, 106); */
+}
 </style>
-

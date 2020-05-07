@@ -9,9 +9,6 @@
     <nuxt-link v-if="isProjects" to="/Projects" class="navbar-item selected-link">Projects</nuxt-link>
     <nuxt-link v-else to="/Projects" class="navbar-item hover-style">Projects</nuxt-link>
 
-    <nuxt-link v-if="isHobbies" to="/Hobbies" class="navbar-item selected-link">Hobbies</nuxt-link>
-    <nuxt-link v-else to="/Hobbies" class="navbar-item hover-style">Hobbies</nuxt-link>
-
     <nuxt-link v-if="isBlog" to="/Blog" class="navbar-item selected-link">Blog</nuxt-link>
     <nuxt-link v-else to="/Blog" class="navbar-item hover-style">Blog</nuxt-link>
   </div>
@@ -23,7 +20,6 @@ export default {
     isAboutMe() {return this.$route.name == 'AboutMe'},
     isResume() {return this.$route.name == 'Resume'},
     isProjects() {return this.$route.name == 'Projects'},
-    isHobbies() {return this.$route.name == 'Hobbies'},
     isBlog() {return this.$route.name == 'Blog'}
   }
 }
@@ -84,6 +80,13 @@ export default {
 }
 .dark-background {
   background-color: rgb(26, 28, 29);
+}
+.green-underline {
+  /* background-color: rgb(86, 255, 208); */
+  border-bottom: 1px solid;
+  border-bottom-color: rgb(86, 255, 208);
+  /* border-top-color: rgb(241, 72, 106); */
+  /* border-top-color: rgb(242, 85, 103); */
 }
 </style>
 
