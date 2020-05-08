@@ -3,92 +3,96 @@
 
     <!-- <div class="container green-underline">&nbsp;</div> -->
 
-    <div class="container columns">
-      <div class="column stock-logo">
-        <!-- <figure class="image"> -->
-          <img src="@/assets/search-logo.png">
-        <!-- </figure> -->
-      </div>
-      <section class="column section dark-background dark-background-section is-medium">
-        <div class="container">
-          <h1 class="title green-underline-text is-size-2 text-spaced"><span class="dark-background-text">About</span><span class="green-text">Me&nbsp;</span></h1>
-          <h2 class="subtitle dark-background-text text-spaced-small">
-            I have a wonderful <span class="rose-text">Family</span>.
-          </h2>
-          <h2 class="subtitle dark-background-text text-spaced-small">
-            My beautiful <span class="rose-text">wife's</span> name is <span class="green-text">Erica</span>.
-          </h2>
-          <h2 class="subtitle dark-background-text">
-            I have a wonderful <span class="rose-text">Family</span>. <span class="green-text">Erica</span> is made up of my beautifyl <span class="rose-text">wife</span> , my <span class="rose-text">son</span> <span class="green-text">Beau</span>, daughter, and dog.
-          </h2>
-        </div>
-      </section>
-      <!-- <section class="column dark-background dark-background-section is-medium">
-        <div class="container">
-          <div class="container is-hidden-touch">&nbsp;</div>
-          <div class="container is-hidden-touch">&nbsp;</div>
-          <div class="container is-hidden-touch">&nbsp;</div>
-          <h1 class="content is-size-2 green-text text-spaced"><span class="rose-text no-underline">|</span><span class="dark-background-text">Full Stack </span><span class="green-underline-text">Developer</span></h1>
-          <div class="container"></div>
-          <h2 class="content dark-background-text bullet-style">
-            &nbsp;&nbsp;<strong class="green-text">Design</strong> a clean friendly<strong class='rose-text'> User Interface</strong>
-          </h2>
-          <div class="container"></div>
-          <h2 class="content dark-background-text bullet-style">
-            &nbsp;&nbsp;<strong class="green-text">Develop</strong> an efficient <strong class='rose-text'>API</strong> ecosystem
-          </h2>
-          <h2 class="content dark-background-text bullet-style">
-            &nbsp;&nbsp;<strong class="green-text">Deploy</strong> to a <strong class='rose-text'>Scalable</strong> network
-          </h2>
-          <h2 class="content dark-background-text bullet-style">
-            &nbsp;&nbsp;<strong class="green-text">Secure</strong> system from <strong class='rose-text'>Vulnerabilities</strong>
-          </h2>
-        </div>
-      </section> -->
-    </div>
-
-    <div class="container">&nbsp;</div>
-
-    <!-- <section class="hero green-background is-small">
-      <div class="hero-body">
-        <div class="container">
-          <h2 class="subtitle green-background-text">
-            Husband - Father - Coach
-          </h2>
-        </div>
-      </div>
-    </section> -->
-    <div class="container columns">
-      <section class="column section dark-background dark-background-section">
+    <div class="container columns content">
+      <section class="column section dark-background dark-background-section is-two-fifths">
         <div class="container">
           <!-- <div class="container is-hidden-touch">&nbsp;</div>
           <div class="container is-hidden-touch">&nbsp;</div>
           <div class="container is-hidden-touch">&nbsp;</div> -->
-          <h1 class="content is-size-2 green-text text-spaced"><span class="dark-background-text green-underline-text">Full Stack</span><span class="green-underline-text">Developer&nbsp;</span></h1>
-          <div class="container"></div>
-          <li class="content dark-background-text bullet-style">
-            <strong class="rose-text">Design</strong> a friendly clean<strong class='green-text'> User Interface</strong>
-          </li>
-          <div class="container"></div>
-          <li class="content dark-background-text bullet-style">
-            <strong class="rose-text">Develop</strong> an efficient <strong class='green-text'>API</strong> network
-          </li>
-          <li class="content dark-background-text bullet-style">
-            <strong class="rose-text">Secure</strong> system from <strong class='green-text'>Vulnerabilities</strong>
-          </li>
-          <li class="content dark-background-text bullet-style">
-            <strong class="rose-text">Deploy</strong> to a <strong class='green-text'>Scalable</strong> ecosystem
-          </li>
+
+
+
+          <div class="column stock-logo">
+            <img class="family-photo search-logo" src="@/assets/pics/family-photo-squared.png">
+          </div>
+
+
+
         </div>
       </section>
 
-      <div class="column stock-logo">
-        <img class="" src="@/assets/pics/family-photo-cropped.png">
+
+      <div class="column is-three-fifths">
+        <h1 class="content is-size-2 green-text text-spaced ">
+          <div class="content"></div>
+          <span class="dark-background-text green-underline-text">Full Stack</span>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span class="rose-underline-text">Developer&nbsp;</span>
+        </h1>
+        <h2 class="subtitle dark-background-text text-spaced-small">
+          &nbsp;&nbsp;<strong class="rose-text">Design</strong> clean & friendly <strong class='green-text'>user interfaces</strong>
+        </h2>
+        <h2 class="subtitle dark-background-text text-spaced-small">
+          &nbsp;&nbsp;<strong class="rose-text">Develop</strong> efficient internal <strong class='green-text'>API</strong> networks
+        </h2>
+        <h2 class="subtitle dark-background-text text-spaced-small">
+          &nbsp;&nbsp;<strong class="rose-text">Debug</strong> systems of <strong class='green-text'>security</strong> vulnerabilities
+        </h2>
+        <h2 class="subtitle dark-background-text text-spaced-small">
+          &nbsp;&nbsp;<strong class="rose-text">Deploy</strong> applications with <strong class='green-text'>scalability</strong> in mind
+        </h2>
       </div>
     </div>
 
+    <!-- <div class="container">&nbsp;</div> -->
 
-    <span> ---- </span>
+    <div class="container columns content">
+
+      <section class="column dark-background dark-background-section is-two-fifths">
+        <div class="container">
+          <h1 class="content green-underline-text is-size-2 text-spaced"><span class="dark-background-text">About</span><span class="green-text"> Me&nbsp;</span></h1>
+          <h2 class="subtitle dark-background-text text-spaced-small">
+            I <span class="green-text">love</span> my wonderful <span class="rose-text">family</span>
+          </h2>
+          <h2 class="subtitle dark-background-text text-spaced-small">
+            <span class="green-text">Erica</span> is my beautiful <span class="rose-text">wife</span>
+          </h2>
+          <h2 class="subtitle dark-background-text">
+            <span class="green-text">Beau</span> is our amazing <span class="rose-text">son</span> and
+          </h2>
+          <h2 class="subtitle dark-background-text">
+            <span class="green-text">Brie</span> is our wonderful <span class="rose-text">daughter</span>
+          </h2>
+          <h2 class="subtitle dark-background-text">
+            Oh and then there is our crazy <span class="rose-text">dog</span> <br>we call <span class="green-text">Portgas D. Ace</span>
+          </h2>
+        </div>
+      </section>
+
+      <div class="column is-three-fifths stock-logo">
+        <img class="search-logo" src="@/assets/search-logo.png">
+      </div>
+
+    </div>
+
+
+    <div class="container columns">
+     <div class="column stock-logo">
+       <img src="@/assets/build-logo.png">
+     </div>
+     <section class="column section dark-background dark-background-section">
+       <div class="container">
+          <!-- <div class="container is-hidden-touch">&nbsp;</div>
+          <div class="container is-hidden-touch">&nbsp;</div>
+          <div class="container is-hidden-touch">&nbsp;</div> -->
+          <h1 class="content is-size-2 green-text text-spaced"><span class="dark-background-text green-underline-text">Challenges</span><span class="green-underline-text"> Accepted&nbsp;</span></h1>
+
+          <p class="content dark-background-text bullet-style text-spaced">
+            I'm <strong class='green-text'>always</strong> looking to <strong class="rose-text">challenge</strong> myself.
+          </p>
+        </div>
+      </section>
+    </div>
 
     <figure class="image">
       <img src="@/assets/build-logo.png">
@@ -225,8 +229,8 @@ strong {
 .family-photo {
   display: inline-block;
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
   overflow: hidden;
   border-radius: 50%;
   /* border-top-left-radius: 80px;
@@ -236,5 +240,15 @@ strong {
 }
 .stock-logo {
   flex: 200px;
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+  position: relative;
+}
+.search-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 40%; */
 }
 </style>

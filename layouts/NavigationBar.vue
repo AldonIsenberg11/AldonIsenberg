@@ -1,14 +1,14 @@
 <template>
   <nav class="navbar is-fixed-top dark-background" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand dark-background">
+    <div class=" navbar-brand dark-background">
       <nuxt-link to="/" class="navbar-item">
         <span>&nbsp;</span>
         <img class="logo-image" src="@/assets/AI-logo.png" width="44">
         <!-- <span v-if="isLandingPage" class="tertiary">&nbsp;ALDON&nbsp;</span>
         <span v-else class="primary">&nbsp;ALDON&nbsp;</span> -->
         &nbsp;
-        <span class="primary green-underline-text">Aldon&nbsp;</span>
-        <span class="secondary green-underline-text">Isenberg&nbsp;</span>
+        <span class="primary">Aldon&nbsp;</span>
+        <span class="secondary">Isenberg II</span>
       </nuxt-link>
     </div>
 
@@ -136,5 +136,9 @@ export default {
   border-bottom: 1px solid;
   border-bottom-color:rgb(241, 72, 106);
   /* border-top-color: rgb(241, 72, 106); */
+}
+.rose-underline-text {
+  text-decoration-line: underline;
+  text-decoration-color: rgb(241, 72, 106);
 }
 </style>
