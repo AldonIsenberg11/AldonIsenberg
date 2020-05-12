@@ -32,12 +32,19 @@
             <li><a>Add a member</a></li>
           </ul>
         </li>
-        <li><a>Invitations</a></li>
-        <li><a>Cloud Storage Settings</a></li>
-        <li><a>Authentication</a></li>
+        <li>
+          <a>Web Apps / Projects</a>
+          <ul>
+            <li><a>Freightview</a></li>
+            <li><a>WrestleDB</a></li>
+            <li><a>WrestleKC</a></li>
+            <li><a>Build-a-Bot</a></li>
+          </ul>
+        </li>
+
       </ul>
       <p class="menu-label">
-        Transactions
+        Blogs
       </p>
       <ul class="menu-list">
         <li><a>Payments</a></li>
@@ -47,3 +54,15 @@
     </aside>
   </div>
 </template>
+
+<script>
+export default {
+  computed: {
+    isAboutMe() {return this.$route.name == 'AboutMe'},
+    isResume() {return this.$route.name == 'Resume'},
+    isProjects() {return this.$route.name == 'Projects'},
+    isBlog() {return this.$route.name == 'Blog'},
+    isLandingPage() {return this.$route.name == 'index'}
+  }
+}
+</script>
