@@ -2,6 +2,7 @@
   <div class="container">
 
     <!-- <div class="container green-underline">&nbsp;</div> -->
+    <div class="container"><threejs-animation/></div>
 
     <div class="container columns content">
       <section class="column section dark-background dark-background-section is-two-fifths">
@@ -10,13 +11,9 @@
           <div class="container is-hidden-touch">&nbsp;</div>
           <div class="container is-hidden-touch">&nbsp;</div> -->
 
-
-
           <div class="column stock-logo">
             <img class="family-photo search-logo" src="@/assets/pics/family-photo-squared.png">
           </div>
-
-
 
         </div>
       </section>
@@ -27,7 +24,7 @@
           <div class="content"></div>
           <span class="dark-background-text green-underline-text">Full Stack</span>
           <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <span class="rose-underline-text">Developer&nbsp;</span>
+          <span class="rose-underline-text">App Developer&nbsp;</span>
         </h1>
         <h2 class="subtitle dark-background-text text-spaced-small">
           &nbsp;&nbsp;<strong class="rose-text">Design</strong> clean & friendly <strong class='green-text'>user interfaces</strong>
@@ -44,40 +41,82 @@
       </div>
     </div>
 
+    <!-- <threejs-animation/> -->
     <!-- <div class="container">&nbsp;</div> -->
 
-    <div class="container columns content">
+    <div class="container columns content green-underline">
 
-      <section class="column dark-background dark-background-section is-two-fifths">
+      <section class="column dark-background dark-background-section is-two-thirds">
         <div class="container">
-          <h1 class="content green-underline-text is-size-2 text-spaced"><span class="dark-background-text">About</span><span class="green-text"> Me&nbsp;</span></h1>
+          <h1 class="content green-underline-text is-size-2 text-spaced">
+            <span class="dark-background-text">Current</span>
+            <span class="green-text"> Projects&nbsp;</span>
+          </h1>
           <h2 class="subtitle dark-background-text text-spaced-small">
-            I <span class="green-text">love</span> my wonderful <span class="rose-text">family</span>
+            These links below should take you to the projects page under their section
           </h2>
-          <h2 class="subtitle dark-background-text text-spaced-small">
-            <span class="green-text">Erica</span> is my beautiful <span class="rose-text">wife</span>
-          </h2>
-          <h2 class="subtitle dark-background-text">
-            <span class="green-text">Beau</span> is our amazing <span class="rose-text">son</span> and
-          </h2>
-          <h2 class="subtitle dark-background-text">
-            <span class="green-text">Brie</span> is our wonderful <span class="rose-text">daughter</span>
-          </h2>
-          <h2 class="subtitle dark-background-text">
-            Oh and then there is our crazy <span class="rose-text">dog</span> <br>we call <span class="green-text">Portgas D. Ace</span>
-          </h2>
+          <ul>
+            <li><a href="">freightview.com</a> - Transportation Management System</li>
+            <li><a href="">wrestleDB.com</a> - Wrestling match stat recorder & ELO system</li>
+            <li><a href="">wrestleKC.com</a> - Wrestling Fan site for Kansas City Metro area</li>
+            <li><a href="">build-a-bot.aldonisenberg.com</a> built during hackathon to learn vue & vuex state management</li>
+          </ul>
         </div>
       </section>
 
-      <div class="column is-three-fifths stock-logo">
+      <div class="column is-one-third stock-logo">
         <img class="search-logo" src="@/assets/search-logo.png">
+      </div>
+    </div>
+
+    <div class="container columns content green-underline">
+      <div class="container"></div>
+      <div class="container"></div>
+      <div class="container content">
+        <h1 class="content is-size-2 dark-background-text text-spaced"><span class="green-underline-text">Resume</span> --> <span class="green-text ">View</span> | <span class="rose-text green-underline-text"> Download</span>(PDF)</h1>
+      </div>
+      <div class="container"></div>
+
+    </div>
+
+    <div class="container columns content">
+      <section class="column dark-background dark-background-section is-two-thirds">
+        <div class="container">
+          <h1 class="content green-underline-text is-size-2 text-spaced">
+            <span class="dark-background-text">Wrestling</span>
+            <span class="green-text"> Coach&nbsp;</span>
+          </h1>
+          <p class="content dark-background-text bullet-style text-spaced">
+            This past year I helped coach Ottawa University to a conference title and punch 5 guys into the national tournament.
+          </p>
+          <p class="content dark-background-text bullet-style text-spaced">
+            Former <strong class="green-text">NCAA</strong> Division 1 <strong class="rose-text">wrestler</strong>.
+          </p>
+          <p class="content dark-background-text bullet-style text-spaced">
+            I started <strong class="rose-text">wrestling</strong> when I was 5 and have been competing ever since.
+          </p>
+          <p>
+            "Wrestling is a hard sport, but then again I am a hard man."
+          </p>
+          <p class="content dark-background-text bullet-style text-spaced">
+            I recently <strong class="green-text">competed</strong> in the 2019 <strong class="rose-text">U.S. Open</strong> in Fort Worth, TX
+          </p>
+          <!-- <h2 class="subtitle dark-background-text text-spaced-small">
+            One of my favorite pastime is the sport of wrestling.
+          </h2> -->
+        </div>
+      </section>
+
+      <div class="column is-one-third stock-logo">
+        <img class="search-logo" src="@/assets/pics/AI-coach.png">
+        <!-- <img class="search-logo" src="@/assets/search-logo.png"> -->
       </div>
 
     </div>
 
 
     <div class="container columns">
-     <div class="column stock-logo">
+     <div class="columnl is-one-third stock-logo">
        <img src="@/assets/build-logo.png">
      </div>
      <section class="column section dark-background dark-background-section">
@@ -86,54 +125,28 @@
           <div class="container is-hidden-touch">&nbsp;</div>
           <div class="container is-hidden-touch">&nbsp;</div> -->
           <h1 class="content is-size-2 green-text text-spaced"><span class="dark-background-text green-underline-text">Challenges</span><span class="green-underline-text"> Accepted&nbsp;</span></h1>
-
           <p class="content dark-background-text bullet-style text-spaced">
-            I'm <strong class='green-text'>always</strong> looking to <strong class="rose-text">challenge</strong> myself.
+            I'm constantly <strong class="green-text">evolving</strong> my skillset by adding <strong class="rose-text">technologies</strong> to my toolbox
+          </p>
+          <p class="content dark-background-text bullet-style text-spaced">
+            I take <strong class='green-text'>pride</strong> in the work I do and embrace the <strong class="rose-text">challenges</strong>
+            that life offers on my journey.
           </p>
         </div>
       </section>
     </div>
 
-    <figure class="image">
-      <img src="@/assets/build-logo.png">
-    </figure>
-
-    <section class="section is-small">
-      <div class="container">
-        <h1 class="title">Section</h1>
-        <h2 class="subtitle">
-          A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
-        </h2>
-      </div>
-    </section>
-    <span> ---- </span>
-
-    <section class="section is-medium">
-      <div class="container">
-        <h1 class="title">Section</h1>
-        <h2 class="subtitle">
-          A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
-        </h2>
-      </div>
-    </section>
-
-    <figure class="image">
-      <img src="@/assets/mustache-man-logo.png">
-    </figure>
-
-    <span> ---- </span>
-      <section class="section is-large">
-        <div class="container">
-          <h1 class="title">Section</h1>
-          <h2 class="subtitle">
-            A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
-          </h2>
-        </div>
-      </section>
-    <span> ---- </span>
-
   </div>
 </template>
+
+<script>
+import ThreeJS from '../components/ThreeJS.vue'
+export default ({
+  components: {
+    'threejs-animation': ThreeJS
+  }
+})
+</script>
 
 <style scoped>
 strong {

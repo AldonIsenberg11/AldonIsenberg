@@ -5,7 +5,7 @@
       <mobile-nav-bar/>
     </div>
     <div class="container">
-      <div v-if="isLandingPage">
+      <div v-if="!isLandingPage || isAboutMePage">
         <div class="container">
           <nuxt/>
         </div>
@@ -39,6 +39,7 @@ export default {
     'side-bar': SideBar
   },
   computed: {
+    isAboutMePage() {return this.$route.name == 'AboutMe'},
     isLandingPage() {return this.$route.name == 'index'}
   },
   head: {

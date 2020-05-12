@@ -15,7 +15,8 @@
   "license": "ISC",
   "dependencies": {
     "@nuxtjs/bulma": "^1.2.7",
-    "nuxt": "^2.12.2"
+    "nuxt": "^2.12.2",
+    "three": "^0.116.1"
   },
   "devDependencies": {
     "node-sass": "^4.14.0",
