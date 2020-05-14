@@ -44,7 +44,7 @@
     <!-- <threejs-animation/> -->
     <!-- <div class="container">&nbsp;</div> -->
 
-    <div class="container columns content green-underline">
+    <div class="container columns content">
 
       <section class="column dark-background dark-background-section is-two-thirds">
         <div class="container">
@@ -69,15 +69,17 @@
       </div>
     </div>
 
-    <div class="container columns content green-underline">
-      <div class="container"></div>
-      <div class="container"></div>
+    <div class="container content green-underline green-overline">
       <div class="container content">
-        <h1 class="content is-size-2 dark-background-text text-spaced"><span class="green-underline-text">Resume</span> --> <span class="green-text ">View</span> | <span class="rose-text green-underline-text"> Download</span>(PDF)</h1>
+        <h1 class="resume-format is-size-2 dark-background-text text-spaced">
+          <span class="green-underline-text">Resume </span>-->&nbsp;
+          <nuxt-link to="/Resume" class="green-text hover-rose-underline-text text-size-small">View</nuxt-link>&nbsp;
+          |&nbsp;<a class="rose-text hover-green-underline-text text-size-small" href="/AI-resume.pdf" download>Download</a><span class="text-size-smaller">(PDF)</span>
+        </h1>
       </div>
-      <div class="container"></div>
-
     </div>
+
+    <div class="container">&nbsp;</div>
 
     <div class="container columns content">
       <section class="column dark-background dark-background-section is-two-thirds">
@@ -195,12 +197,43 @@ strong {
   letter-spacing: 0.05em;
 }
 
+.text-size-small {
+  font-size: 80%
+}
+.text-size-smaller {
+  font-size: 40%
+}
 
+.hover-green-underline-text {
+  letter-spacing: .05em;
+  text-decoration-color: rgb(86, 255, 208);
+}
+.hover-green-underline-text:hover {
+  letter-spacing: .10em;
+  text-decoration-line: underline;
+  text-decoration-color: rgb(86, 255, 208);
+}
+.hover-rose-underline-text {
+  letter-spacing: .05em;
+  text-decoration-color: rgb(241, 72, 106);
+}
+.hover-rose-underline-text:hover {
+  letter-spacing: .10em;
+  text-decoration-line: underline;
+  text-decoration-color: rgb(241, 72, 106);
+}
 
 .green-underline {
   /* background-color: rgb(86, 255, 208); */
   border-bottom: 1px solid;
   border-bottom-color: rgb(86, 255, 208);
+  /* border-top-color: rgb(241, 72, 106); */
+  /* border-top-color: rgb(242, 85, 103); */
+}
+.green-overline {
+  /* background-color: rgb(86, 255, 208); */
+  border-top: 1px solid;
+  border-top-color: rgb(86, 255, 208);
   /* border-top-color: rgb(241, 72, 106); */
   /* border-top-color: rgb(242, 85, 103); */
 }
@@ -241,7 +274,7 @@ strong {
 
 .family-photo {
   display: inline-block;
-  position: relative;
+  /* position: relative; */
   width: 400px;
   height: 400px;
   overflow: hidden;
@@ -263,5 +296,11 @@ strong {
   margin-left: auto;
   margin-right: auto;
   /* width: 40%; */
+}
+.resume-format {
+  height: 1.66em;
+  display: flex;
+  align-items: center;
+  justify-content: center
 }
 </style>
