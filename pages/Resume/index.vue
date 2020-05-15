@@ -4,7 +4,7 @@
     <section class="container content green-background green-background-text">
       <div class="container">&nbsp;</div>
       <div class="container columns">
-        <div class="column is-one-quarter">
+        <div class="column is-narrow">
           <h1 class="is-size-2 ">&nbsp;&nbsp;Work Experience</h1>
         </div>
         <div class="is-hidden-mobile">
@@ -12,7 +12,7 @@
           <h2 class="is-size-4 is-italic">Never ask others to do what you are unwilling to do yourself.</h2>
         </div>
         <div class="column is-one-fifth ">
-          &nbsp;&nbsp;&nbsp;&nbsp;<a class="rose-text rose-underline-text hover-rose-underline-text is-size-3" href="/AI-resume.pdf" download>Download</a><span class="text-size-smaller">(PDF)</span>
+          &nbsp;&nbsp;&nbsp;&nbsp;<a class="rose-text rose-underline-text hover-rose-underline-text is-size-3" href="/isenberg_resume.pdf" download>Download</a><span class="text-size-smaller">(PDF)</span>
         </div>
       </div>
 
@@ -91,10 +91,10 @@
         <div class="container">&nbsp;</div>
         <p class="content dark-background-text bullet-style text-spaced">
           <ul>
-            <li>Aided in the <span class='rose-text'>development</span> of business processes to decouple load matching & tracking freight</li>
+            <li><span class='green-text'>Aided</span> in the <span class='rose-text'>development</span> of business processes to decouple load matching & tracking freight</li>
             <li><span class='rose-text'>Led</span> a team of <span class='green-text'>6</span> to ensure that we had <span class='green-text'>visibility</span> on all shipments to meet our <span class="rose-text">metrics</span></li>
-            <li><span class='rose-text'>Evaluated</span> & <span class='rose-text'>qualified</span> <span class='green-text'>1000+</span> Common & Contract Property Carriers via USDOT to do business with</li>
-            <li><span class='rose-text'>Achieved</span> an average of over <span class='green-text'>22% profit</span> <span class='rose-text'>margin</span> on all brokered loads during time as a Logistics Coordinator</li>
+            <li><span class='rose-text'>Evaluated</span> & <span class='rose-text'>qualified</span> <span class='green-text'>1000+</span> Common & Contract Property Carriers via USDOT compliance</li>
+            <li><span class='rose-text'>Achieved</span> an average of over <span class='green-text'>22% profit</span> <span class='rose-text'>margin</span> on all brokered loads during time as an L.C.</li>
             <li><span class='rose-text'>Generated</span> over <span class='green-text'>$100,000</span> in gross profit as a Logistics Coordinator within 5 months of hire</li>
           </ul>
         </p>
