@@ -4,22 +4,13 @@
     <!-- <div class="container green-underline">&nbsp;</div> -->
     <div class="container"><threejs-animation/></div>
 
-    <div class="container columns content">
-      <section class="column section dark-background dark-background-section is-two-fifths">
-        <div class="container">
-          <!-- <div class="container is-hidden-touch">&nbsp;</div>
-          <div class="container is-hidden-touch">&nbsp;</div>
-          <div class="container is-hidden-touch">&nbsp;</div> -->
-
-          <div class="column stock-logo">
-            <img class="family-photo search-logo" src="@/assets/pics/family-photo-squared.png">
-          </div>
-
+    <div class="container columns">
+      <div class="container column section dark-background dark-background-section is-narrow">
+        <div class="stock-logo">
+          <img class="family-photo search-logo" src="@/assets/pics/family-photo-squared.png">
         </div>
-      </section>
-
-
-      <div class="column is-three-fifths">
+      </div>
+      <div class="column content">
         <h1 class="content is-size-2 green-text text-spaced ">
           <div class="content"></div>
           <span class="dark-background-text green-underline-text">Full Stack</span>
@@ -41,11 +32,7 @@
       </div>
     </div>
 
-    <!-- <threejs-animation/> -->
-    <!-- <div class="container">&nbsp;</div> -->
-
     <div class="container columns content">
-
       <section class="column dark-background dark-background-section is-two-thirds">
         <div class="container">
           <h1 class="content green-underline-text is-size-2 text-spaced">
@@ -53,7 +40,8 @@
             <span class="green-text"> Projects&nbsp;</span>
           </h1>
           <h2 class="subtitle dark-background-text text-spaced-small">
-            These links below should take you to the projects page under their section
+            These links are a few projects that I've built or help build. More details can be found on the
+            <nuxt-link to="/Projects" class="rose-text hover-green-underline-text">Projects</nuxt-link> page
           </h2>
           <ul>
             <li><a href="">freightview.com</a> - Transportation Management System</li>
@@ -63,7 +51,6 @@
           </ul>
         </div>
       </section>
-
       <div class="column is-one-third stock-logo">
         <img class="search-logo" src="@/assets/search-logo.png">
       </div>
@@ -72,9 +59,8 @@
     <div class="container content green-underline green-overline">
       <div class="container content">
         <h1 class="resume-format is-size-2 dark-background-text text-spaced">
-          <span class="green-underline-text">Resume </span>-->&nbsp;
-          <nuxt-link to="/Resume" class="green-text hover-rose-underline-text text-size-small">View</nuxt-link>&nbsp;
-          |&nbsp;<a class="rose-text hover-green-underline-text text-size-small" href="/AI-resume.pdf" download>Download</a><span class="text-size-smaller">(PDF)</span>
+          <nuxt-link to="/Resume" class="green-text hover-rose-underline-text text-size-small">View Resume</nuxt-link>&nbsp;
+          |&nbsp;<a class="rose-text hover-green-underline-text text-size-small" href="/isenberg_resume.pdf" download>Download Resume </a><span class="text-size-smaller">(PDF)</span>
         </h1>
       </div>
     </div>
@@ -97,35 +83,27 @@
           <p class="content dark-background-text bullet-style text-spaced">
             I started <strong class="rose-text">wrestling</strong> when I was 5 and have been competing ever since.
           </p>
-          <p>
+          <p class="is-italic">
             "Wrestling is a hard sport, but then again I am a hard man."
           </p>
           <p class="content dark-background-text bullet-style text-spaced">
             I recently <strong class="green-text">competed</strong> in the 2019 <strong class="rose-text">U.S. Open</strong> in Fort Worth, TX
           </p>
-          <!-- <h2 class="subtitle dark-background-text text-spaced-small">
-            One of my favorite pastime is the sport of wrestling.
-          </h2> -->
         </div>
       </section>
 
       <div class="column is-one-third stock-logo">
         <img class="search-logo" src="@/assets/pics/AI-coach.png">
-        <!-- <img class="search-logo" src="@/assets/search-logo.png"> -->
       </div>
 
     </div>
 
-
     <div class="container columns">
-     <div class="columnl is-one-third stock-logo">
+     <div class="column is-one-third stock-logo">
        <img src="@/assets/build-logo.png">
      </div>
      <section class="column section dark-background dark-background-section">
        <div class="container">
-          <!-- <div class="container is-hidden-touch">&nbsp;</div>
-          <div class="container is-hidden-touch">&nbsp;</div>
-          <div class="container is-hidden-touch">&nbsp;</div> -->
           <h1 class="content is-size-2 green-text text-spaced"><span class="dark-background-text green-underline-text">Challenges</span><span class="green-underline-text"> Accepted&nbsp;</span></h1>
           <p class="content dark-background-text bullet-style text-spaced">
             I'm constantly <strong class="green-text">evolving</strong> my skillset by adding <strong class="rose-text">technologies</strong> to my toolbox
@@ -137,7 +115,6 @@
         </div>
       </section>
     </div>
-
   </div>
 </template>
 
@@ -210,7 +187,7 @@ strong {
 }
 .hover-green-underline-text:hover {
   letter-spacing: .10em;
-  text-decoration-line: underline;
+  text-decoration-line: underline overline;
   text-decoration-color: rgb(86, 255, 208);
 }
 .hover-rose-underline-text {
@@ -219,7 +196,7 @@ strong {
 }
 .hover-rose-underline-text:hover {
   letter-spacing: .10em;
-  text-decoration-line: underline;
+  text-decoration-line: underline overline;
   text-decoration-color: rgb(241, 72, 106);
 }
 
