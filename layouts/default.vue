@@ -56,4 +56,7 @@ export default {
 .green-text {
   color: rgb(86, 255, 208);
 }
+.rose-text {
+  color: rgb(241, 72, 106);
+}
 </style>
