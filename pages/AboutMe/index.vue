@@ -85,8 +85,6 @@ strong {
   letter-spacing: 0.05em;
 }
 
-
-
 .green-underline {
   /* background-color: rgb(86, 255, 208); */
   border-bottom: 1px solid;

@@ -50,3 +50,10 @@ export default {
   }
 }
 </script>
+
+<style>
+@import '../assets/fontawesome/css/all.css';
+.green-text {
+  color: rgb(86, 255, 208);
+}
+</style>

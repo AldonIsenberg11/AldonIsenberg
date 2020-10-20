@@ -55,7 +55,7 @@
             <li><span class="green-text">ReactJS/BackboneJS</span> - front-end framework</li>
             <li><span class="green-text">RabbitMQ</span> - messaging client</li>
             <li><span class="green-text">NATS</span> - streaming service</li>
-            <li><span class="green-text">Redis</span> - pub-sub service</li>
+            <li><span class="green-text">Redis</span> - session-store</li>
           </ul>
         </p>
       </div>
