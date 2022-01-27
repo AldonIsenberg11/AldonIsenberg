@@ -16,7 +16,7 @@
   "dependencies": {
     "@nuxtjs/bulma": "^1.2.7",
     "nuxt": "^2.12.2",
-    "three": "^0.116.1"
+    "three": "^0.137.0"
   },
   "devDependencies": {
     "node-sass": "^4.14.0",
