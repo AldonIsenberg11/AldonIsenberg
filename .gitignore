@@ -26,3 +26,5 @@ cookie
 
 src/**/*.map
 test/**/*.map
+
+tsconfig.json
