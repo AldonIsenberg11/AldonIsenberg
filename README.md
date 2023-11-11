@@ -1,3 +1,4 @@
+[DEPRECATED] see https://github.com/Wrestling-Dev/the-wrestling-dev for updated personal webpage
 # Getting Started
 
 My personal site using nuxt.js
